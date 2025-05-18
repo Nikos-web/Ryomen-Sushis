@@ -1,0 +1,268 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffdf6;
+  color: #2c2c2c;
+}
+
+#inicio {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#titulo, #texto {
+  font-family: 'Playwrite DK Loopet', cursive;
+}
+
+#titulo {
+  font-size: 2.5em;
+  color: #b71c1c;
+}
+
+#texto {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.inicio {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B5011A;
+  color: white;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #C50119;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+#banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner-texto h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Playwrite DK Loopet', cursive;
+}
+
+.banner-texto p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#sobre {
+    #sobre::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin-top: -80px;    
+    visibility: hidden;   
+}
+}
+/* Cardápio */
+#cardapio {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cardapio h2 {
+    font-size: 2.8rem;
+    color: #d32f2f;
+    margin-bottom: 2rem;
+}
+
+.cardapio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.item-cardapio {
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.item-cardapio:hover {
+    transform: scale(1.05);
+}
+
+.item-cardapio img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.item-cardapio h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.item-cardapio p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #d32f2f;
+}
+    .contato {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.contato h1 {
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.form-contato .campo {
+    margin-bottom: 20px;
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border-color: #d32f2f;
+    outline: none;
+}
+
+.form-contato button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-contato button:hover {
+    background-color: #b71c1c;
+}
+
+.info-loja {
+    margin-top: 40px;
+    text-align: center;
+    color: #444;
+}
+
+.info-loja h2 {
+    margin-bottom: 10px;
+    color: #d32f2f;
+}
+
+#quem-somos {
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 50px 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #555;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+#quem-somos h2 {
+  color: #d32f2f;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1.3px;
+}
